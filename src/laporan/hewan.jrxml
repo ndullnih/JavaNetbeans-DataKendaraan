@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2cba9f24-7c8c-4dee-bba2-694cb91f0cb4">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_hewan]]>
+	</queryString>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="makanan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="habitat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="215" y="17" width="66" height="32" uuid="ce525024-a4a7-49bf-b3be-7204390f45a8"/>
+				<textElement textAlignment="Center">
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="16" width="100" height="19" uuid="0b307640-6baf-4b8d-8425-c9684e18ea46"/>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="16" width="100" height="19" uuid="2513e101-81b9-4373-a988-a4197bc7947f"/>
+				<text><![CDATA[GOLONGAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="16" width="100" height="19" uuid="084c126e-bcda-4921-b516-4fbc21e058d4"/>
+				<text><![CDATA[JENIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="16" width="100" height="19" uuid="47170170-3279-4987-8397-4db53e9211d3"/>
+				<text><![CDATA[MAKANAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="16" width="100" height="19" uuid="d9133d84-3f50-4647-8366-3c7e1d52e57b"/>
+				<text><![CDATA[HABITAT]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="41" width="100" height="20" uuid="0732f707-c5d0-432c-a9a6-a1eba0816544"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="41" width="100" height="20" uuid="5c1fcd8f-e6dd-4542-ba3a-bb0094a8ed40"/>
+				<textFieldExpression><![CDATA[$F{gol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="41" width="100" height="20" uuid="37e641b1-89e2-4bf3-992b-b7a5f57d497f"/>
+				<textFieldExpression><![CDATA[$F{jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="41" width="100" height="20" uuid="c379ee46-632d-4775-a895-0331c4da9166"/>
+				<textFieldExpression><![CDATA[$F{makanan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="41" width="100" height="20" uuid="ae682211-a5c3-4c33-a00b-495b55f4af37"/>
+				<textFieldExpression><![CDATA[$F{habitat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
